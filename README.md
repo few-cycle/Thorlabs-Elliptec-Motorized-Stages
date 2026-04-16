@@ -144,7 +144,7 @@ Useful options:
 ## Communication protocol
 
 For the complete communication protocol covering all Thorlabs ELLx models, see the official Thorlabs manual:
-- [ELLx Modules Protocol Manual (PDF)](./ellx-modules-protocol-manual.pdf?raw=1)
+- [ELLx Modules Protocol Manual (PDF)](./ellx-modules-protocol-manual.pdf)
 
 ---
 
