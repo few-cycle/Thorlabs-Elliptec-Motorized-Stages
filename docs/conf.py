@@ -25,6 +25,9 @@ exclude_patterns: list[str] = ["_build", "Thumbs.db", ".DS_Store"]
 
 autodoc_member_order = "bysource"
 autodoc_typehints = "none"
+autodoc_default_options = {
+    "inherited-members": True,
+}
 
 napoleon_google_docstring = True
 napoleon_numpy_docstring = False
