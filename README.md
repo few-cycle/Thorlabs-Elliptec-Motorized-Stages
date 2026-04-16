@@ -178,9 +178,9 @@ pip install -r requirements-docs.txt
 python -m sphinx -b html docs docs/_build/html
 ```
 
-After publishing with Read the Docs, add your public docs link here:
+Documentation:
 
-`Documentation: <ADD_YOUR_READTHEDOCS_URL_HERE>`
+[https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/](https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/)
 
 ---
 
