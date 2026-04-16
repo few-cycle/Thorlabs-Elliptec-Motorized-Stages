@@ -1,12 +1,39 @@
 Quickstart
 ==========
 
-Install dependencies
---------------------
+Prerequisites
+-------------
+
+The only dependency for ``thorlabs_elliptec`` is the Python serial library (``pyserial``), which should be installed automatically if using ``pip`` or similar. If you obtain the code by other means, ensure ``pyserial`` is installed and can be found on your Python path.
+
+Installing the Software
+-------------------------
+
+Download using pip
+~~~~~~~~~~~~~~~~~~
+
+The package installer for Python (``pip``) is the typical method for installation:
 
 .. code-block:: bash
 
-   pip install pyserial
+   pip install --user --upgrade Thorlabs-Elliptec-Motorized-Stages
+
+The ``--user`` parameter installs using user-level permissions, so root or administrator privileges are not required. Installing into a dedicated Python environment is also recommended.
+
+Clone from Git
+~~~~~~~~~~~~~~
+
+Alternatively, the latest version can be downloaded from the Git repository:
+
+.. code-block:: bash
+
+   git clone https://github.com/few-cycle/Thorlabs-Elliptec-Motorized-Stages.git
+
+and optionally installed to your system using ``pip``:
+
+.. code-block:: bash
+
+   pip install --user --upgrade Thorlabs-Elliptec-Motorized-Stages
 
 Minimal example
 ---------------

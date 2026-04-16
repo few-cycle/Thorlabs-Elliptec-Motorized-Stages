@@ -46,7 +46,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#install-dependencies">Install dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-the-software">Installing the Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#download-using-pip">Download using pip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clone-from-git">Clone from Git</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#minimal-example">Minimal example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bench-test-script">Bench test script</a></li>
 </ul>
@@ -80,11 +85,31 @@
              
   <section id="quickstart">
 <h1>Quickstart<a class="headerlink" href="#quickstart" title="Link to this heading"></a></h1>
-<section id="install-dependencies">
-<h2>Install dependencies<a class="headerlink" href="#install-dependencies" title="Link to this heading"></a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>pyserial
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<p>The only dependency for <code class="docutils literal notranslate"><span class="pre">thorlabs_elliptec</span></code> is the Python serial library (<code class="docutils literal notranslate"><span class="pre">pyserial</span></code>), which should be installed automatically if using <code class="docutils literal notranslate"><span class="pre">pip</span></code> or similar. If you obtain the code by other means, ensure <code class="docutils literal notranslate"><span class="pre">pyserial</span></code> is installed and can be found on your Python path.</p>
+</section>
+<section id="installing-the-software">
+<h2>Installing the Software<a class="headerlink" href="#installing-the-software" title="Link to this heading"></a></h2>
+<section id="download-using-pip">
+<h3>Download using pip<a class="headerlink" href="#download-using-pip" title="Link to this heading"></a></h3>
+<p>The package installer for Python (<code class="docutils literal notranslate"><span class="pre">pip</span></code>) is the typical method for installation:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--upgrade<span class="w"> </span>Thorlabs-Elliptec-Motorized-Stages
 </pre></div>
 </div>
+<p>The <code class="docutils literal notranslate"><span class="pre">--user</span></code> parameter installs using user-level permissions, so root or administrator privileges are not required. Installing into a dedicated Python environment is also recommended.</p>
+</section>
+<section id="clone-from-git">
+<h3>Clone from Git<a class="headerlink" href="#clone-from-git" title="Link to this heading"></a></h3>
+<p>Alternatively, the latest version can be downloaded from the Git repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/few-cycle/Thorlabs-Elliptec-Motorized-Stages.git
+</pre></div>
+</div>
+<p>and optionally installed to your system using <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--upgrade<span class="w"> </span>Thorlabs-Elliptec-Motorized-Stages
+</pre></div>
+</div>
+</section>
 </section>
 <section id="minimal-example">
 <h2>Minimal example<a class="headerlink" href="#minimal-example" title="Link to this heading"></a></h2>
