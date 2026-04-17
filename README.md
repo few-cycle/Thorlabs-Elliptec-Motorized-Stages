@@ -63,7 +63,7 @@ This project provides:
 For the complete communication protocol covering all Thorlabs ELLx models, see the official Thorlabs manual:
 - [ELLx Modules Protocol Manual (PDF)](./ellx-modules-protocol-manual.pdf)
 
-Documentation:
+## Documentation:
 
 [https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/](https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/)
 
