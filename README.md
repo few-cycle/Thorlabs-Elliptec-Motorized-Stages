@@ -58,6 +58,17 @@ This project provides:
 
 ---
 
+## Communication protocol
+
+For the complete communication protocol covering all Thorlabs ELLx models, see the official Thorlabs manual:
+- [ELLx Modules Protocol Manual (PDF)](./ellx-modules-protocol-manual.pdf)
+
+Documentation:
+
+[https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/](https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/)
+
+---
+
 ## Requirements
 
 - Python 3.9+ recommended
@@ -68,21 +79,6 @@ Install runtime dependency:
 ```bash
 pip install pyserial
 ```
-
-## PyPI Installation (Planned)
-
-When the package is published to PyPI, install it with:
-
-```bash
-pip install <YOUR_PACKAGE_NAME>
-```
-
-Placeholders:
-
-- PyPI package name: `<YOUR_PACKAGE_NAME>`
-- PyPI project URL: `<ADD_YOUR_PYPI_URL_HERE>`
-
----
 
 ## Quick Start
 
@@ -139,15 +135,6 @@ Useful options:
 - One serial bus can host multiple modules on different addresses.
 - The wrappers are designed for addressed communication over one shared bus object.
 
----
-
-## Communication protocol
-
-For the complete communication protocol covering all Thorlabs ELLx models, see the official Thorlabs manual:
-- [ELLx Modules Protocol Manual (PDF)](./ellx-modules-protocol-manual.pdf)
-
----
-
 ## Error Handling
 
 Core exceptions from `ElliptecBus`:
@@ -178,17 +165,13 @@ pip install -r requirements-docs.txt
 python -m sphinx -b html docs docs/_build/html
 ```
 
-Documentation:
-
-[https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/](https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/)
-
 ---
 
 ## License
 
 This project is licensed under the Apache License 2.0.
 
-See the `LICENSE` file for full terms.
+See the [`LICENSE`](./LICENSE) file for full terms.
 
 ---
 

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Thorlabs-Elliptec-Motorized-Stages"
+version = "1.0.0"
+description = "Python wrappers for Thorlabs Elliptec ELLx modules on a shared serial bus."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+authors = [
+  { name = "Pooya Abdolghader" }
+]
+dependencies = [
+  "pyserial",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+Repository = "https://github.com/few-cycle/Thorlabs-Elliptec-Motorized-Stages"
+Documentation = "https://thorlabs-elliptec-motorized-stages.readthedocs.io/en/latest/"
+
+[tool.setuptools.packages.find]
+include = ["Elliptec*"]

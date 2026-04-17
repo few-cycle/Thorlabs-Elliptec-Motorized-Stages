@@ -11,7 +11,7 @@ if PROJECT_ROOT not in sys.path:
 
 project = "Thorlabs Elliptec Motorized Stages"
 author = "Pooya Abdolghader"
-release = "0.1.0"
+release = "1.0.0"
 
 extensions = [
     "sphinx.ext.autodoc",
