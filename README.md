@@ -80,6 +80,17 @@ Install runtime dependency:
 pip install pyserial
 ```
 
+## PyPI
+
+Install from PyPI:
+
+```bash
+pip install Thorlabs-Elliptec-Motorized-Stages
+```
+
+Project page:
+[https://pypi.org/project/Thorlabs-Elliptec-Motorized-Stages/](https://pypi.org/project/Thorlabs-Elliptec-Motorized-Stages/)
+
 ## Quick Start
 
 ### 1) Connect to a bus
