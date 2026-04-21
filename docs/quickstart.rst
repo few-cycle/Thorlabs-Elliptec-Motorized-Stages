@@ -38,6 +38,12 @@ and optionally installed to your system using ``pip``:
 
    pip install Thorlabs-Elliptec-Motorized-Stages
 
+Source code
+~~~~~~~~~~~
+
+Project repository:
+`Thorlabs-Elliptec-Motorized-Stages on GitHub <https://github.com/few-cycle/Thorlabs-Elliptec-Motorized-Stages>`_
+
 Minimal example
 ---------------
 

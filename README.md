@@ -146,6 +146,31 @@ Useful options:
 - One serial bus can host multiple modules on different addresses.
 - The wrappers are designed for addressed communication over one shared bus object.
 
+### Multiple ELLx modules on one bus
+
+New modules typically share the default address `0`. Before you can control more than one module on the same serial bus with this package, each module must be given a **unique** address and the change must be **saved** on the device.
+
+1. Install the **Thorlabs Elliptec** PC software from Thorlabs: [Elliptec software (Software tab)](https://www.thorlabs.com/sm05-threaded-rotation-mount-with-resonant-piezoelectric-motors?tabName=Software).
+2. Connect one module at a time (or follow the kit / ELLB distribution-board procedure in the Thorlabs documentation), open the software, set a unique address for each module (not `0` for every unit), and **save** it to non-volatile memory.
+3. After every module on the bus has its own address, use this library with one `ElliptecBus` instance and pass the correct `address=` to each device wrapper.
+
+Example (two **ELL16** stages on one COM port after unique addresses are saved, e.g. `0` and `1`):
+
+```python
+from ElliptecBus.elliptec_bus import ElliptecBus
+from ElliptecRotaryStages.ELL16 import Ell16
+
+with ElliptecBus("COM4") as bus:
+    rot0 = Ell16(bus, address="0", auto_validate_model=True)
+    rot1 = Ell16(bus, address="1", auto_validate_model=True)
+
+    print(rot0.get_info())
+    print(rot1.get_position_degrees())
+
+    rot0.home()
+    rot1.move_absolute_degrees(90.0)
+```
+
 ## Error Handling
 
 Core exceptions from `ElliptecBus`:
