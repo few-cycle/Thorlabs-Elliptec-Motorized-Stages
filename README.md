@@ -160,7 +160,7 @@ Example (two **ELL16** stages on one COM port after unique addresses are saved, 
 from ElliptecBus.elliptec_bus import ElliptecBus
 from ElliptecRotaryStages.ELL16 import Ell16
 
-with ElliptecBus("COM4") as bus:
+with ElliptecBus("COM18") as bus:
     rot0 = Ell16(bus, address="0", auto_validate_model=True)
     rot1 = Ell16(bus, address="1", auto_validate_model=True)
 
